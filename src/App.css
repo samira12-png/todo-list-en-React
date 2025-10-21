@@ -1,0 +1,74 @@
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* centre horizontalement */
+  align-items: center;    /* centre verticalement */
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Style de la card TodoList */
+.card {
+  width: 360px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+/* Titre avec emoji */
+.card-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #007bff; /* bleu bootstrap */
+  text-align: center;
+}
+
+/* Boutons ajouter/modifier */
+.btn-success {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #0056b3;
+}
+
+/* Style des tâches terminées */
+.done {
+  background-color: #f8d7da !important; /* rouge clair */
+}
+
+.done .task-text {
+  text-decoration: line-through !important;
+  color: #721c24 !important; /* rouge foncé */
+  cursor: pointer;
+}
+
+/* Curseur pointer sur texte tâche */
+.task-text {
+  cursor: pointer;
+}
+
+/* Espacement entre boutons d’action */
+.btn-sm {
+  width: 36px;
+  height: 32px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+/* Input et bouton dans la même ligne */
+.input-group > input.form-control {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.input-group > .btn {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
